@@ -84,7 +84,7 @@ module Seven_segment_Decrementer(
         // WXYZ / 1000 = W
         // (WXYZ % 1000) / 100 = X
         // ((WXYZ % 1000) % 100) / 10 = Y
-        // WXYZ % 1000 = Z
+        // WXYZ % 10 = Z
         2'b00: begin
             anode_activation = 4'b0111; 
             LED_activation_set = displayed_number / 1000;
